@@ -1,0 +1,8 @@
+# folder
+__pycache__/
+
+# file json
+books.json
+
+# file log
+*.log
