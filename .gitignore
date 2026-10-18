@@ -6,3 +6,6 @@ books.json
 
 # file log
 *.log
+
+# file env
+.env
