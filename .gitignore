@@ -1,5 +1,6 @@
 # folder
 __pycache__/
+.vscode/
 
 # file json
 books.json
@@ -9,3 +10,4 @@ books.json
 
 # file env
 .env
+
