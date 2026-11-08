@@ -8,8 +8,9 @@ A simple taak manager built with python
 - save books 
 - load saved books 
 - admin mode 
+- add priority book in main code 
 
-## Project structure
+## Project Structure
 
 ```text
 personal_book_manager/
@@ -68,6 +69,12 @@ personal_book_manager/
 - **Why it happens:** Your computer has more than one Python, and the terminal uses a different one.
 - **What to check first:** Run `python --version` and compare it with the version you expect.
 
+## Priority Book 
+Prioritizing books at 3 levels : 
+- high
+- medium 
+- low 
+
 ## Requirements
 - Python 
 - pyhton-dotenv
@@ -77,7 +84,7 @@ Install the required paskages :
 ```bash
 pyhton -m pip install -r requirments.txt
 ```
-## Envoirment setup 
+## Envoirment Setup 
 create a `.env` file in the project folder 
 
 Ues `.env.example` as a template 
@@ -89,7 +96,7 @@ BOOK_MANAGER_ADMIN_PASSWORD=your_password_here_for_admin
 ``` 
 replace `your_password_here_for_admin` with your own admin password 
 
-## run the program 
+## Run the Program 
 run the main file : 
 ```bash 
 python main.py
