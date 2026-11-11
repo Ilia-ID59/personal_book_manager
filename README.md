@@ -1,28 +1,27 @@
 # Personal Book Manager
-![Static Badge](https://img.shields.io/badge/python-3.13-blue)
+![Static Badge](https://img.shields.io/badge/python-3.13-red)
 
-A simple taak manager built with python 
+A simple book manager built with python 
 
 ## Features 
-- add multiple books
-- save books 
-- load saved books 
-- admin mode 
-- add priority book in main code 
+- Add multiple books
+- Save and load books automatically
+- Admin mode with password protection
+- Add priority levels for books (low, medium, high) 
 
 ## Project Structure
 
 ```text
 personal_book_manager/
+├───images/  
+│       Demo.gif    
+|       screenshot_1.jpg    
 |   .env.example    
 |   .gitignore  
 |   books.py    
 |   main.py   
 |   requirements.txt    
 |   README.md   
-├───images  
-│       Demo.gif    
-|       screenshot_1.jpg    
 └───
 ```
 
@@ -39,13 +38,13 @@ personal_book_manager/
 
 ## How It Works
 
-1. When the program starts, it loads the password from the `.env` file.
-2. It asks if you want to open Admin Mode. If you say yes, you must enter the correct password.
-3. It asks for your name and shows a welcome message.
-4. It reads the previous books from `books.txt` (or `books.json`). If the file does not exist yet, it starts with an empty list.
-5. You can add a new book. In the newer version, you also choose a priority (low, medium, high).
-6. The program shows all books in a list.
-7. When you finish, the books are saved to the file, so they are still there the next time you run the program.
+1. Loads the admin password from the `.env` file.
+2. Asks to open Admin Mode (requires the correct password).
+3. Asks for your name and shows a welcome message.
+4. Loads previously saved books from `books.json`. If it's the first run, starts with an empty list.
+5. Allows you to add new books and set a priority (low, medium, high).
+6. Shows the list of all books.
+7. Saves the books to the file when the program exits.
 
 ## Troubleshooting
 
@@ -77,17 +76,17 @@ Prioritizing books at 3 levels :
 
 ## Requirements
 - Python 
-- pyhton-dotenv
+- python-dotenv
 
 ## Installation
 Install the required paskages : 
 ```bash
-pyhton -m pip install -r requirments.txt
+python -m pip install -r requirements.txt
 ```
-## Envoirment Setup 
+## Environment Setup 
 create a `.env` file in the project folder 
 
-Ues `.env.example` as a template 
+Use `.env.example` as a template 
 
 Add your admin password 
 
