@@ -5,7 +5,8 @@ import os
 load_dotenv()
 
 name = input("type your name : ")
-print("welcome", name)
+print(f"hello {name}")
+print("welcome to system Book Manager")
 
 admin_mode = input("do you want to enter admin mode ? (yes/no) ")
 if admin_mode == "yes":
@@ -31,3 +32,6 @@ for b in range(count_book):
 
 show_books(books)
 save_books(books)
+
+print(f"Number of registered books : {count_book}")
+print(f"You have {count_book} books to reading")
