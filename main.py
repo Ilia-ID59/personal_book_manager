@@ -33,4 +33,5 @@ for b in range(count_book):
 show_books(books)
 save_books(books)
 
+print(f"Number of registered books : {count_book}")
 print(f"You have {count_book} books to reading")
